@@ -7,10 +7,10 @@ namespace sda_csharp_exercises
         static void Main(string[] args)
         {
             string str = "Example string";
-            Console.WriteLine("Input: " + str);
+            Console.WriteLine("Input: " + str);                     //Input: Example string
             str = Leetify(str);
-            Console.WriteLine("Leetified: " + str);
-            Console.WriteLine("Unleetified: " + Unleetify(str));
+            Console.WriteLine("Leetified: " + str);                 //Leetified: 3x4mpl3 $tr1ng
+            Console.WriteLine("Unleetified: " + Unleetify(str));    //Unleetified: example string
         }
 
         static char[] leetLetters = { '4', '3', '1', '0', '$' };

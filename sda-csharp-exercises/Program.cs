@@ -23,7 +23,10 @@ namespace sda_csharp_exercises
         public static int FactorialRecursive(int number)
         {
             int result = 1;
-            result *= number;
+            if (number > 0)
+            {
+                result *= number;
+            }
 
             if (number > 1)
             {

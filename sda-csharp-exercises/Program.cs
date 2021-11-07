@@ -14,7 +14,7 @@ namespace sda_csharp_exercises
             {
                 Console.WriteLine(ex.Message);
             }
-            Console.WriteLine(FactorialRecursive(5));
+            Console.WriteLine(FactorialRecursive(3));
         }
         public static int Factorial(int number)
         {
@@ -36,19 +36,12 @@ namespace sda_csharp_exercises
 
         public static int FactorialRecursive(int number)
         {
-            int result = 1;
-            if (number > 0)
+            if (number == 0)
             {
-                result *= number;
+                return 1;
             }
 
-            if (number > 1)
-            {
-                return result *= FactorialRecursive(number - 1);
-            }
-
-            return result;
+            return number * FactorialRecursive(number - 1);
         }
-
     }
 }

@@ -6,7 +6,15 @@ namespace sda_csharp_exercises
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Witaj E00 :-)!");
+            for (int i = 1; i <= 3; i++)
+            {
+                PriceList(i, 5);
+            }
+        }
+
+        public static void PriceList(int amount, double price)
+        {
+            Console.WriteLine($"Liczba sztuk: {amount} łączna cena: {amount * price}zł");
         }
     }
 }

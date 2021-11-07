@@ -13,10 +13,11 @@ namespace sda_csharp_exercises
             Console.WriteLine("Unleetified: " + Unleetify(str));
         }
 
+        static char[] leetLetters = { '4', '3', '1', '0', '$' };
+        static char[] naturalLetters = { 'a', 'e', 'i', 'o', 's' };
+
         public static string Leetify(string str)
         {
-            char[] leetLetters = { '4', '3', '1', '0', '$' };
-            char[] naturalLetters = { 'a', 'e', 'i', 'o', 's' };
             string result = str.ToLower();
 
             for (int i = 0; i < result.Length; i++)
@@ -29,13 +30,12 @@ namespace sda_csharp_exercises
                     }
                 }
             }
+
             return result;
         }
 
         public static string Unleetify(string str)
         {
-            char[] leetLetters = { '4', '3', '1', '0', '$' };
-            char[] naturalLetters = { 'a', 'e', 'i', 'o', 's' };
             string result = str;
 
             for (int i = 0; i < result.Length; i++)

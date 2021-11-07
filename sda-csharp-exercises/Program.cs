@@ -6,10 +6,11 @@ namespace sda_csharp_exercises
     {
         static void Main(string[] args)
         {
-            int[] array = { 2, 5, 1, 2, 5, 5, 3, 1, 6, 8 };
+            int[] array = { 2, 5, 1, 2, 0, 5, 3, 1, 6, 8 };
             foreach (int num in PrintOnce(array))
             {
-                Console.WriteLine(num);
+                if (num != -1)
+                    Console.WriteLine(num);
             }
         }
 
@@ -39,7 +40,6 @@ namespace sda_csharp_exercises
                     finalNumbers[i] = -1;
                 }
             }
-
 
             return finalNumbers;
         }

@@ -8,7 +8,7 @@ namespace sda_csharp_exercises
         {
             DrawTriangle(3);
             Console.WriteLine();
-            DrawTriangle(5);
+            DrawTriangle(5, 'o');
         }
 
         public static void DrawTriangle(int lines, char sign = '*')

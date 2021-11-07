@@ -6,12 +6,26 @@ namespace sda_csharp_exercises
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Factorial(5));
+            try
+            {
+                Console.WriteLine(Factorial(-5));
+            }
+            catch (ArgumentException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             Console.WriteLine(FactorialRecursive(5));
         }
         public static int Factorial(int number)
         {
+            if (number < 0)
+            {
+                throw new ArgumentException("Nie można wyliczyć silni dla liczby ujemnej!");
+            }
+
             int result = 1;
+
+
             for (int i = number; i > 1; i--)
             {
                 result *= i;

@@ -22,7 +22,7 @@ namespace sda_csharp_exercises
             Salary = salary;
         }
 
-        public new void WhoAmI()
+        public override void WhoAmI()
         {
             base.WhoAmI();
             Console.WriteLine($"Salary = {Salary}");

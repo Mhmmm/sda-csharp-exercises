@@ -40,7 +40,7 @@ namespace sda_csharp_exercises
             YearOfBirth = yearOfBirth;
         }
 
-        public void WhoAmI()
+        public virtual void WhoAmI()
         {
             Console.WriteLine($"My name is {LastName}. {FirstName} {LastName}.");
         }

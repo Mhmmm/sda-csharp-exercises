@@ -22,6 +22,7 @@ namespace sda_csharp_exercises
             //};
             //person.WhoAmI();
             //Console.WriteLine(person.IsAdult());
+
             Employee employee = new Employee();
             employee.FirstName = "Jan";
             employee.LastName = "Kowalski";
@@ -29,6 +30,9 @@ namespace sda_csharp_exercises
             employee.Salary = 5000;
 
             employee.WhoAmI();
+            Console.WriteLine(employee.IsAdult());
+
+            Employee employee2 = new Employee("Adam", "Nowak", 2015, 5000);
         }
     }
 }

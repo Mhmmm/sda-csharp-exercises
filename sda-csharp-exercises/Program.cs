@@ -7,20 +7,13 @@ namespace sda_csharp_exercises
     {
         static void Main(string[] args)
         {
-            Person person0 = new Person("Joanna", "Kowalska", 1982);
-            person0.WhoAmI();
-            Person person = new Employee("Adam", "Nowak", 2000, 6000);
-            person.WhoAmI();
-            Employee employee = new Employee("Jan", "Kowalski", 1981, 5000);
-            employee.WhoAmI();
-            List<Person> people = new List<Person>();
-            people.Add(person0);
-            people.Add(employee);
-            people.Add(person);
+            List<Employee> employees = new List<Employee>();
+            employees.Add(new Employee("Jan", "Kowalski", 1981, 5000));
+            employees.Add(new Manager("Adam", "Nowak", 2000, 5000));
 
-            foreach (Person p in people)
+            foreach (Employee e in employees)
             {
-                Console.WriteLine(p);
+                Console.WriteLine(e);
             }
         }
     }

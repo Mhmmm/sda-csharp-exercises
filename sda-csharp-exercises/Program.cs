@@ -13,6 +13,15 @@ namespace sda_csharp_exercises
             person.WhoAmI();
             Employee employee = new Employee("Jan", "Kowalski", 1981, 5000);
             employee.WhoAmI();
+            List<Person> people = new List<Person>();
+            people.Add(person0);
+            people.Add(employee);
+            people.Add(person);
+
+            foreach (Person p in people)
+            {
+                Console.WriteLine(p);
+            }
         }
     }
 }

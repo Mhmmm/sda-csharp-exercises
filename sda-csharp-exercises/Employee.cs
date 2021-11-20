@@ -27,5 +27,10 @@ namespace sda_csharp_exercises
             base.WhoAmI();
             Console.WriteLine($"Salary = {Salary}");
         }
+
+        public override string ToString()
+        {
+            return $"{{ firstName: \"{FirstName}\", lastName: \"{LastName}\", yearOfBirth: {YearOfBirth}, salary: {Salary} }}";
+        }
     }
 }

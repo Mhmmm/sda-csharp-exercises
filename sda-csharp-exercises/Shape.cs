@@ -6,23 +6,19 @@ using System.Threading.Tasks;
 
 namespace sda_csharp_exercises
 {
-    class Shape
+    interface IShape
     {
-        private List<Shape> list = new List<Shape>();
-
-        public void Add(Shape shape)
-        {
-            list.Add(shape);
-        }
-
-        public virtual double GetArea()
+        public double GetArea();
+        public static double GetTotalArea(List<IShape> shapes)
         {
             double total = 0;
-            foreach (Shape shape in list)
+
+            foreach (IShape shape in shapes)
             {
                 total += shape.GetArea();
             }
             return total;
         }
+
     }
 }

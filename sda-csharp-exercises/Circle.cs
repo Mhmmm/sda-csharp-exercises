@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace sda_csharp_exercises
 {
-    class Circle : Shape
+    class Circle : IShape
     {
         private double radius;
         const double PI = 3.14159265359;
@@ -16,7 +16,7 @@ namespace sda_csharp_exercises
             this.radius = radius;
         }
 
-        public override double GetArea()
+        public double GetArea()
         {
             return PI * (radius * radius);
         }

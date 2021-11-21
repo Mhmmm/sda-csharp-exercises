@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace sda_csharp_exercises
 {
@@ -9,13 +10,13 @@ namespace sda_csharp_exercises
             Circle circle = new Circle(3.4);
             Square square = new Square(3.4);
 
-            Shape shapes = new Shape();
+            List<IShape> shapes = new List<IShape>();
             shapes.Add(circle);
             shapes.Add(square);
 
             Console.WriteLine("CIRCLE: " + circle.GetArea());
             Console.WriteLine("SQUARE " + square.GetArea());
-            Console.WriteLine($"TOTAL: " + shapes.GetArea());
+            Console.WriteLine($"TOTAL: " + IShape.GetTotalArea(shapes));
         }
     }
 }

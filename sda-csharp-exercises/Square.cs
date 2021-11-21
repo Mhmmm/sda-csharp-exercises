@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace sda_csharp_exercises
 {
-    class Square : Shape
+    class Square : IShape
     {
         private double side;
 
@@ -14,7 +14,7 @@ namespace sda_csharp_exercises
         {
             this.side = side;
         }
-        public override double GetArea()
+        public double GetArea()
         {
             return side * side;
         }

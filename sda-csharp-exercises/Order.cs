@@ -32,7 +32,7 @@ namespace sda_csharp_exercises
             {
                 Console.WriteLine(item);
             }
-            Console.WriteLine($"Wartość zamówienia = {GetValue()} PLN");
+            Console.WriteLine($"Wartość zamówienia: {GetValue()} PLN");
         }
     }
 }

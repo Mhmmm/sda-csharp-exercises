@@ -40,8 +40,8 @@ namespace sda_csharp_exercises
 
         public override string ToString()
         {
-            return $"{Name}, cena: {UnitPrice} PLN, opakowanie: {PackageName}, cena opakowania: {PackagePrice} PLN," +
-                $"{Quantity} szt, wartość: {GetValue()} PLN";
+            return $"{Name}, unit price: {UnitPrice} PLN, package: {PackageName}, package price: {PackagePrice} PLN, " +
+                $"{Quantity} szt, total: {GetValue()} PLN";
         }
     }
 }

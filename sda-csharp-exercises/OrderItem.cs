@@ -50,7 +50,7 @@ namespace sda_csharp_exercises
 
         public override string ToString()
         {
-            return $"{name}, cena: {unitPrice} PLN, {quantity} szt, wartość: {GetValue()} PLN";
+            return $"{name}, unit price: {unitPrice} PLN, {quantity} szt, total: {GetValue()} PLN";
         }
     }
 }

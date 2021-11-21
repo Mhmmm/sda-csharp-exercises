@@ -13,6 +13,9 @@ namespace sda_csharp_exercises
         public double point2x = 0;
         public double point2y = 0;
 
+        public double point1z = 0;
+        public double point2z = 0;
+
         public LineSegment(MyPoint point1, MyPoint point2)
         {
             point1x = point1.X;
@@ -28,11 +31,6 @@ namespace sda_csharp_exercises
             point1y = y1;
             point2x = x2;
             point2y = y2;
-        }
-
-        public double GetLength()
-        {
-            return Math.Sqrt(Math.Pow(point2x - point1x, 2) + Math.Pow(point2y - point1y, 2));
         }
     }
 }

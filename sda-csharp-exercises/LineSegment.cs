@@ -12,7 +12,7 @@ namespace sda_csharp_exercises
         public double point1y = 0;
         public double point2x = 0;
         public double point2y = 0;
-
+        //3D points
         public double point1z = 0;
         public double point2z = 0;
 
@@ -26,7 +26,6 @@ namespace sda_csharp_exercises
 
         public LineSegment(double x1, double y1, double x2, double y2)
         {
-
             point1x = x1;
             point1y = y1;
             point2x = x2;

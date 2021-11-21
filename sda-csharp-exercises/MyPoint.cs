@@ -10,7 +10,7 @@ namespace sda_csharp_exercises
     {
         public double X { get; set; }
         public double Y { get; set; }
-        public double Z { get; set; }
+        public double Z { get; set; } //ugh
 
         public MyPoint(double x, double y)
         {

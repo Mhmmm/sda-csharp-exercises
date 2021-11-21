@@ -20,7 +20,7 @@ namespace sda_csharp_exercises
         }
     }
 
-    //class Director : Manager
+    //class Director : Manager // nie można dziedziczyć po klasach "sealed"
     //{
 
     //}

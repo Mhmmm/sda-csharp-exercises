@@ -6,16 +6,26 @@ using System.Threading.Tasks;
 
 namespace sda_csharp_exercises
 {
-    class Shape
+    abstract class Shape
     {
-        private List<Shape> list = new List<Shape>();
+        //private List<Shape> list = new List<Shape>();
 
-        public void Add(Shape shape)
-        {
-            list.Add(shape);
-        }
+        //public void Add(Shape shape)
+        //{
+        //    list.Add(shape);
+        //}
 
-        public virtual double GetArea()
+        public abstract double GetArea();
+        //{
+        //    double total = 0;
+        //    foreach (Shape shape in list)
+        //    {
+        //        total += shape.GetArea();
+        //    }
+        //    return total;
+        //}
+
+        public static double GetTotalArea(List<Shape> list)
         {
             double total = 0;
             foreach (Shape shape in list)
